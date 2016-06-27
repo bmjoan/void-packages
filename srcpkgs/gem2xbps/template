@@ -12,7 +12,7 @@ checksum=f160e472b4e34367a16f0bb08a286174fe19502cbe7b45295432aba945913139
 depends="ruby"
 
 do_install() {
-	vinstall gem2xbps 755 usr/bin gem2xbps
+	vbin gem2xbps
 }
 
 post_install() {
