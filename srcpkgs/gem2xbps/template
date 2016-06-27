@@ -1,0 +1,20 @@
+# Template file for 'gem2xbps'
+pkgname=gem2xbps
+version=0.1
+revision=1
+short_desc="Tool to generate XBPS template files for Ruby gems packaging"
+maintainer="JoanBM <no.public@email.sorry>"
+homepage="https://gitlab.com/joanbm/gem2xbps"
+license="MIT"
+distfiles="https://gitlab.com/joanbm/gem2xbps/uploads/7ad22fd8db33b3240cbe2df999c7ed39/${pkgname}-${version}.tar.gz"
+checksum=f160e472b4e34367a16f0bb08a286174fe19502cbe7b45295432aba945913139
+
+depends="ruby"
+
+do_install() {
+	vinstall gem2xbps 755 usr/bin gem2xbps
+}
+
+post_install() {
+	vlicense LICENSE
+}
