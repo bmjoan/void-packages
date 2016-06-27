@@ -9,6 +9,7 @@
 bash_regexp=".*sh"
 perl_regexp=".*perl[^[:space:]]*"
 python_regexp=".*python[^[:space:]]*"
+ruby_regexp=".*ruby[^[:space:]]*"
 
 replace_interpreter() {
 	local lang="$1" file="$2" trsb orsb
@@ -27,6 +28,10 @@ replace_interpreter() {
 	python)
 		orsb=$python_regexp
 		trpath="/usr/bin/python"
+		;;
+	ruby)
+		orsb=$ruby_regexp
+		trpath="/usr/bin/ruby"
 		;;
 	*)
 		;;

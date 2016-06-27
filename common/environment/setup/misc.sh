@@ -17,7 +17,7 @@ PYPI_SITE="https://files.pythonhosted.org/packages/source"
 MOZILLA_SITE="http://ftp.mozilla.org/pub"
 GNU_SITE="http://ftp.gnu.org/gnu"
 FREEDESKTOP_SITE="http://freedesktop.org/software"
-
+RUBYGEMS_SITE="https://rubygems.org"
 # Repetitive sub homepage's with no real project page
 # ie. some gnome and xorg projects. For use in $homepage.
 XORG_HOME="http://xorg.freedesktop.org/wiki/"
