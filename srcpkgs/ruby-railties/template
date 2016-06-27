@@ -1,0 +1,26 @@
+# Template file for 'ruby-railties'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-railties
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=4.2.6
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-activesupport ruby-actionpack ruby-thor"
+makedepends="ruby-devel libxml2-devel"
+short_desc="Tools for creating, working with, and running Rails applications."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://www.rubyonrails.org"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=f1647b138090f8ca03983f9c8be4067e8bc11d07ef9533cb176cb88b34e60636
+
+railties_package() {
+	short_desc="Executable(s) for $pkgname"
+	depends="${sourcepkg}>=${version}_${revision}"
+
+	pkg_install() {
+		vmove usr/bin
+	}
+}  

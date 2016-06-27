@@ -1,0 +1,17 @@
+# Template file for 'ruby-mime-types-data'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-mime-types-data
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=3.2016.0521
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="mime-types-data provides a registry for information about MIME media type definitions"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="https://github.com/mime-types/mime-types-data/"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=7542bccff06d70c4ad94d1cf10b7dac6bd89958356e5d0d7f6447168c819be12

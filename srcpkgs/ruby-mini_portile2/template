@@ -1,0 +1,17 @@
+# Template file for 'ruby-mini_portile2'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-mini_portile2
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=2.1.0
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="Simplistic port-like solution for developers"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://github.com/flavorjones/mini_portile"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=0b0e83fe0fc190640a93c48cef0c8e1f1f40f77840d82c160fefc1b07a5345f8

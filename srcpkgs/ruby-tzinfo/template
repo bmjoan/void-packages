@@ -1,0 +1,17 @@
+# Template file for 'ruby-tzinfo'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-tzinfo
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=1.2.2
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-thread_safe"
+makedepends="ruby-devel"
+short_desc="Daylight savings aware timezone library"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://tzinfo.github.io"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=fdb1d3fdf2776d490c82a0e589a08e7cbde70ac1ae7d2b1f0b7e77f3e6b801b0

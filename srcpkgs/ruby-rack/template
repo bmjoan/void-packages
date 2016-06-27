@@ -1,0 +1,26 @@
+# Template file for 'ruby-rack'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-rack
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=1.6.4
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="a modular Ruby webserver interface"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://rack.github.io/"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=455ec4545a54b40dae9937bc5f61ee0e32134191cc1ef9a7959a19ec4b127a25
+
+rack_package() {
+	short_desc="Executable(s) for $pkgname"
+	depends="${sourcepkg}>=${version}_${revision}"
+
+	pkg_install() {
+		vmove usr/bin
+	}
+}  

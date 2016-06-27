@@ -1,0 +1,17 @@
+# Template file for 'ruby-activemodel'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-activemodel
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=4.2.6
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-activesupport ruby-builder"
+makedepends="ruby-devel"
+short_desc="A toolkit for building modeling frameworks (part of Rails)."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://www.rubyonrails.org"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=4230930ea7ba04b6af940f9a393a821601e99cce387d964eea8d1215f8417145

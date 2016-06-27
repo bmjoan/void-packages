@@ -1,0 +1,17 @@
+# Template file for 'ruby-rails-dom-testing'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-rails-dom-testing
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=1.0.7
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-nokogiri ruby-activesupport ruby-rails-deprecated_sanitizer"
+makedepends="ruby-devel libxml2-devel"
+short_desc="Dom and Selector assertions for Rails applications"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="https://github.com/rails/rails-dom-testing"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=6813821425ff44ae3188162d0bae1a2ae08080fc1a584860bf78d50190a112ed

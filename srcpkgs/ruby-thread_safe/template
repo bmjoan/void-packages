@@ -1,0 +1,17 @@
+# Template file for 'ruby-thread_safe'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-thread_safe
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=0.3.5
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="A collection of data structures and utilities to make thread-safe programming in Ruby easier"
+maintainer="JoanBM <no.public@email.sorry>"
+license="Apache-2.0"
+homepage="https://github.com/ruby-concurrency/thread_safe"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=993da065f98b8575c537ebf984ffb79eecdb6064559a3b9d2a9d7aaf313704c3

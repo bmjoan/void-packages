@@ -1,0 +1,17 @@
+# Template file for 'ruby-rails-deprecated_sanitizer'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-rails-deprecated_sanitizer
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=1.0.3
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-activesupport"
+makedepends="ruby-devel"
+short_desc="Deprecated sanitizer API extracted from Action View."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="https://github.com/rails/rails-deprecated_sanitizer"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=722d589fc83dea0ea49e816440bacc554383dc9a05c8aee5429cf7f621abbe63

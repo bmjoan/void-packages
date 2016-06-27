@@ -1,0 +1,17 @@
+# Template file for 'ruby-activerecord'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-activerecord
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=4.2.6
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-activesupport ruby-activemodel ruby-arel"
+makedepends="ruby-devel"
+short_desc="Object-relational mapper framework (part of Rails)."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://www.rubyonrails.org"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=bfcf285ddf5ba4ce8f45c3472a8d827a2c35ab5ba0e4186af13db35c4f7653ae

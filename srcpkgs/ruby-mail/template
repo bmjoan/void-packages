@@ -1,0 +1,17 @@
+# Template file for 'ruby-mail'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-mail
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=2.6.4
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-mime-types"
+makedepends="ruby-devel"
+short_desc="Mail provides a nice Ruby DSL for making, sending and reading emails."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="https://github.com/mikel/mail"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=77d6a70c45d435dde688f841a9aa955571b8f3c624966812282b290bbcc33b31

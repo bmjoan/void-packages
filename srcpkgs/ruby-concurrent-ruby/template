@@ -1,0 +1,17 @@
+# Template file for 'ruby-concurrent-ruby'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-concurrent-ruby
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=1.0.2
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="Modern concurrency tools for Ruby. Inspired by Erlang, Clojure, Scala, Haskell, F#, C#, Java, and classic concurrency patterns."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://www.concurrent-ruby.com"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=5c4b4cce37fc538660fae3b9fb7b51a2bc443eda4c5394e51521527fb6d264cd

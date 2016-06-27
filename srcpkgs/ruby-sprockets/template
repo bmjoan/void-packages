@@ -1,0 +1,26 @@
+# Template file for 'ruby-sprockets'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-sprockets
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=3.6.1
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-rack ruby-concurrent-ruby"
+makedepends="ruby-devel"
+short_desc="Rack-based asset packaging system"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="https://github.com/rails/sprockets"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=e2f2b174a8eb4fa4285f849424d66287125db2a86377c4605bb6ff4260dfcbd2
+
+sprockets_package() {
+	short_desc="Executable(s) for $pkgname"
+	depends="${sourcepkg}>=${version}_${revision}"
+
+	pkg_install() {
+		vmove usr/bin
+	}
+}  

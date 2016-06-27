@@ -1,0 +1,17 @@
+# Template file for 'ruby-actionmailer'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-actionmailer
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=4.2.6
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-actionpack ruby-actionview ruby-activejob ruby-mail ruby-rails-dom-testing"
+makedepends="ruby-devel libxml2-devel"
+short_desc="Email composition, delivery, and receiving framework (part of Rails)."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://www.rubyonrails.org"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=af645c9ab74db6793198545a7c528608c59158abdee4db712fc70ea0046b4796

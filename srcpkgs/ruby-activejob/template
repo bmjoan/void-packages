@@ -1,0 +1,17 @@
+# Template file for 'ruby-activejob'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-activejob
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=4.2.6
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-activesupport ruby-globalid"
+makedepends="ruby-devel"
+short_desc="Job framework with pluggable queues."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://www.rubyonrails.org"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=d125bf495b6e91ebaa0279af987a9669fd1dbdfa479a459d3d915000ce2b0f14

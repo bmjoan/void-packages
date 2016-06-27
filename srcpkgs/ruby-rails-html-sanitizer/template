@@ -1,0 +1,17 @@
+# Template file for 'ruby-rails-html-sanitizer'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-rails-html-sanitizer
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=1.0.3
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-loofah"
+makedepends="ruby-devel libxml2-devel"
+short_desc="This gem is responsible to sanitize HTML fragments in Rails applications."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="https://github.com/rails/rails-html-sanitizer"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=a7da8eb4ce2e673ba909d36a94a9e06f196e88a92e76d01dfee3803d0d6a0e8d

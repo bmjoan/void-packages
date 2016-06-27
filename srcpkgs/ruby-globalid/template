@@ -1,0 +1,17 @@
+# Template file for 'ruby-globalid'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-globalid
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=0.3.6
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-activesupport"
+makedepends="ruby-devel"
+short_desc="Refer to any model with a URI: gid://app/class/id"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://www.rubyonrails.org"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=2189faa079709772a0f64ac8df61dbcd84c5112a0a9b3c86971887eef4cdbd90

@@ -1,0 +1,26 @@
+# Template file for 'ruby-thor'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-thor
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=0.19.1
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="Thor is a toolkit for building powerful command-line interfaces."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://whatisthor.com/"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=9ff834f031b5550c743bb8a3139317fefdae9cdebd02d60de376658f427fe522
+
+thor_package() {
+	short_desc="Executable(s) for $pkgname"
+	depends="${sourcepkg}>=${version}_${revision}"
+
+	pkg_install() {
+		vmove usr/bin
+	}
+}  

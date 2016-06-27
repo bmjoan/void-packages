@@ -1,0 +1,26 @@
+# Template file for 'ruby-bundler'
+pkgname=ruby-bundler
+_gemname=${pkgname#ruby-}
+_gemlicfile="LICENSE.md"
+version=1.12.5
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="Virtual environment for Ruby projects and their gems dependencies"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://bundler.io"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=6c5e111b828de62d3b5d72d8ae0add77099a34059ede582f0de7c85479ec04e1
+
+
+bundler_package() {
+	short_desc="Executable(s) for $pkgname virtual environment"
+	depends="${sourcepkg}>=${version}_${revision}"
+
+	pkg_install() {
+		vmove usr/bin
+	}
+}

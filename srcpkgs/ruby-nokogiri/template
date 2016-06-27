@@ -1,0 +1,26 @@
+# Template file for 'ruby-nokogiri'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-nokogiri
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=1.6.8
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-mini_portile2 ruby-pkg-config"
+makedepends="ruby-devel libxml2-devel"
+short_desc="Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://nokogiri.org"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=37a4af5a4a8fb5a43991a38e51db64d6406b8d11fdaed57f8cf9454fea86f29e
+
+nokogiri_package() {
+	short_desc="Executable(s) for $pkgname"
+	depends="${sourcepkg}>=${version}_${revision}"
+
+	pkg_install() {
+		vmove usr/bin
+	}
+}  

@@ -1,0 +1,17 @@
+# Template file for 'ruby-builder'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-builder
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=3.2.2
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="Builders for MarkUp."
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="http://onestepback.org"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=62fb9ad70ea42219a0c8d209a30281803712c717df7cb8f5ce5f63b4d489d191

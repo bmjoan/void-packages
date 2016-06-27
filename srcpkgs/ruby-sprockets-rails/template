@@ -1,0 +1,17 @@
+# Template file for 'ruby-sprockets-rails'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-sprockets-rails
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=3.0.4
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby ruby-sprockets ruby-actionpack ruby-activesupport"
+makedepends="ruby-devel libxml2-devel"
+short_desc="Sprockets Rails integration"
+maintainer="JoanBM <no.public@email.sorry>"
+license="MIT"
+homepage="https://github.com/rails/sprockets-rails"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=733327d095c59f10471fd760b6c18b3145a6c49fee1c918e2b0fc7ef438b4afb
