@@ -3,7 +3,7 @@
 pkgname=ruby-sprockets
 _gemname=${pkgname#ruby-}
 _gemlicfile=""
-version=3.6.1
+version=3.6.2
 revision=1
 noarch=yes
 build_style=rubygem
@@ -14,7 +14,7 @@ maintainer="JoanBM <no.public@email.sorry>"
 license="MIT"
 homepage="https://github.com/rails/sprockets"
 distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
-checksum=e2f2b174a8eb4fa4285f849424d66287125db2a86377c4605bb6ff4260dfcbd2
+checksum=92631f2717f61055fd2d87d763a78be380c013be821c51982b50574accceae42
 
 sprockets_package() {
 	short_desc="Executable(s) for $pkgname"
