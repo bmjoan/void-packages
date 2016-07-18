@@ -1,0 +1,17 @@
+# Template file for 'ruby-narray'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-narray
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=0.6.1.2
+revision=1
+noarch=yes
+build_style=rubygem
+depends="ruby"
+makedepends="ruby-devel"
+short_desc="N-dimensional Numerical Array class for Ruby"
+maintainer="Your Name <your.email@domain.name>"
+license="Ruby"
+homepage="http://masa16.github.io/narray/"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=73bf101929a1570e8034058e1296fec58d6c3386c26bf26810d33f70dd4236b7

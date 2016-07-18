@@ -1,0 +1,20 @@
+# Template file for 'ruby-gsl'
+# Generated with gem2xbps (https://gitlab.com/joanbm/gem2xbps)
+pkgname=ruby-gsl
+_gemname=${pkgname#ruby-}
+_gemlicfile=""
+version=2.1.0.1
+revision=1
+build_style=rubygem
+depends="ruby gsl $(vopt_if narray ruby-narray)"
+makedepends="ruby-devel gsl-devel $(vopt_if narray ruby-narray)"
+short_desc="Ruby interface to the GNU Scientific Library"
+maintainer="Your Name <your.email@domain.name>"
+license="GPL-2.0"
+homepage="http://github.com/SciRuby/rb-gsl"
+distfiles="${RUBYGEMS_SITE}/downloads/${_gemname}-${version}.gem"
+checksum=3701f85cc161c454e4876cc805200cf0973192ab52e808ba6230ab3d08fd64f1
+
+# Package build options
+build_options="narray"
+build_options_default="narray"
